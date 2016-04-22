@@ -9,8 +9,7 @@ install:
 
 install-symfony:
 	composer create-project symfony/framework-standard-edition --no-interaction admin_bundle_demo
-	cd admin_bundle_demo && composer require lag/doctrine-repository:dev-master
-	cd admin_bundle_demo && composer require lag/adminbundle:~0.3
+	cd admin_bundle_demo && composer require lag/adminbundle:dev-dev
 
 run:
 	$(sf) server:run
